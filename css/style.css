@@ -10,8 +10,25 @@
 --off-white: #f6f6f6;
 --white: #fff;
 --not-quite-black: #23272a;
-
  */
+
+:root {
+    --brand: #5865f2;
+    --brand-gradient: linear-gradient(90deg, #8ea1e1, #7289da);
+    --greyple: #99aab5;
+    --dark-not-black: #2c2f33;
+    --focus-border: #00b0f4;
+    --status-green: #43b581;
+    --text-link: #00b0f4;
+    --off-white: #f6f6f6;
+    --white: #fff;
+    --not-quite-black: #23272a;
+    --not-quite-black-rgb: 35, 39, 42;
+    --black: #000;
+    --ekko-red: #de2761;
+}
+
+
 
 /* General */
 
@@ -25,10 +42,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
-    
+
 }
+
 /******** 
 Utility 
 ********/
@@ -39,7 +57,6 @@ Utility
 
 .hv_70 {
     height: 70vh;
-    background-color: #5865f2;
 }
 
 .hv_40 {
@@ -47,13 +64,22 @@ Utility
     background-color: aquamarine;
 }
 
-
-
 /********
  Header 
  ********/
+.site_header {
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+/********
+  Navigation 
+  ********/
+
 .navigation {
-    color: white;
+    color: var(--off-white);
     font-weight: bold;
     width: 1200px;
     margin: auto;
@@ -79,23 +105,62 @@ Utility
     transform: translate(0, 50%);
 }
 
-.access{
+.access {
     position: absolute;
     right: 0;
     bottom: 50%;
     transform: translate(0, 50%);
 }
 
-.access > button{
+.access>button {
     font-weight: bold;
     display: inline-block;
-    background-color: white;
+    background-color: var(--off-white);
     height: 40px;
     padding: 0 1.3rem;
     border-radius: 23px;
     vertical-align: middle;
-    
+
 }
+
+/********
+ Banner Text
+ ********/
+
+.text_banner {
+    color: var(--off-white);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    text-align: center;
+}
+
+.text_banner>h2 {
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+    font-size: bold;
+}
+
+.text_banner>p {
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+}
+
+.text_banner>button {
+    margin: 2rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-block;
+    background-color: var(--off-white);
+    height: 60px;
+    padding: 0px 2.3rem;
+    border-radius: 23px;
+    vertical-align: middle;
+
+}
+
 
 /******** 
  Main 
