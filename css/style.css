@@ -44,11 +44,18 @@ body {
 
 a {
     text-decoration: none;
-
 }
 
-/******** 
-Utility 
+a:visited {
+    text-decoration: none;
+}
+
+button {
+    text-decoration: none;
+}
+
+/********
+Utility
 ********/
 .hv_80 {
     height: 80vh;
@@ -64,8 +71,24 @@ Utility
     background-color: aquamarine;
 }
 
+.bg_dark {
+    background-color: var(--dark-not-black);
+}
+
+.btn_light {
+    background-color: var(--off-white);
+}
+
+.text_light{
+    color: var(--off-white);
+}
+
+.text_dark{
+    color: var(--not-quite-black);
+}
+
 /********
- Header 
+ Header
  ********/
 .site_header {
     background-image: url("../img/jumbo.png");
@@ -75,7 +98,7 @@ Utility
 }
 
 /********
-  Navigation 
+  Navigation
   ********/
 
 .navigation {
@@ -130,7 +153,7 @@ Utility
 .text_banner {
     color: var(--off-white);
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 40%;
@@ -138,30 +161,35 @@ Utility
 }
 
 .text_banner>h2 {
-    margin-bottom: 3rem;
+    margin-top: 2.5rem;
     font-size: 3.5rem;
-    font-size: bold;
+    font-weight: bold;
 }
 
 .text_banner>p {
-    line-height: 2.5rem;
-    font-size: 1.5rem;
+    margin-top: 2rem;
+    line-height: 2rem;
+    font-size: 1.3rem;
 }
 
-.text_banner>button {
-    margin: 2rem 2rem;
+.text_banner button {
+    margin: 2rem 1rem;
     font-size: 1.2rem;
     font-weight: bold;
     display: inline-block;
-    background-color: var(--off-white);
     height: 60px;
     padding: 0px 2.3rem;
     border-radius: 23px;
-    vertical-align: middle;
-
 }
 
 
-/******** 
- Main 
+
+#arrow_down {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+/********
+ Main
  *********/
