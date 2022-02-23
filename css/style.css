@@ -54,6 +54,13 @@ button {
     text-decoration: none;
 }
 
+
+h2 {
+    margin-top: 2.5rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
 /********
 Utility
 ********/
@@ -85,6 +92,22 @@ Utility
 
 .text_dark{
     color: var(--not-quite-black);
+}
+
+.big_col{
+    width: 60%;
+    margin-right: 10%;
+}
+
+.sm_col{
+    width: 30%;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+
 }
 
 /********
@@ -160,11 +183,6 @@ Utility
     text-align: center;
 }
 
-.text_banner>h2 {
-    margin-top: 2.5rem;
-    font-size: 3.5rem;
-    font-weight: bold;
-}
 
 .text_banner>p {
     margin-top: 2rem;
@@ -193,3 +211,22 @@ Utility
 /********
  Main
  *********/
+
+.grid_row{
+    margin-top: 50px;
+    margin: auto;
+    width: 1200px;
+    position: relative;
+}
+
+.grid_row img{
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid_img,
+.grid_text{
+    float: left;
+    
+}
