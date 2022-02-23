@@ -65,6 +65,11 @@ h3 {
     font-weight: bold;
 }
 
+ul>li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
 /******* 
 Common Rules 
 *********/
@@ -83,9 +88,6 @@ Common Rules
 /********
 Utility
 ********/
-.hv_100 {
-    height: 100vh;
-}
 
 .hv_80 {
     height: 80vh;
@@ -93,6 +95,11 @@ Utility
 
 .hv_70 {
     height: 70vh;
+}
+
+.hv_60 {
+    height: 60vh;
+    background-color: var(--dark-not-black);
 }
 
 .hv_40 {
@@ -304,7 +311,7 @@ Utility
     background-position-y: -26px;
     padding: 1rem 0;
     position: absolute;
-    top: 10%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -313,3 +320,72 @@ Utility
     margin-top: 2rem;
 
 }
+
+/*******
+ Footer 
+ ********/
+
+footer span,
+footer h3 {
+    color: var(--white);
+    /* display: block; */
+}
+.site_footer{
+    position: relative;
+    background-color: var(--not-quite-black);
+}
+.footer_box{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.f_row {
+    margin: auto;
+    position: relative;
+    width: 70%;
+
+}
+
+.col_left {
+
+    width: 40%;
+}
+
+.col_right {
+    font-size: 1.2rem;
+    line-height: 2rem;
+
+    width: 60%;
+}
+
+.col {
+    width: 25%;
+}
+
+
+.foot_ul li:first-of-type,
+.f_row h3 {
+    font-weight: bold;
+    color: var(--brand);
+}
+
+.foot_ul a {
+    color: var(--off-white);
+}
+
+hr{
+    margin-top: 3rem;
+    margin: auto;
+    width: 70%;
+}
+
+.end{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
