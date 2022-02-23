@@ -56,8 +56,7 @@ button {
 
 
 h2 {
-    margin-top: 2.5rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -65,8 +64,7 @@ h2 {
 Utility
 ********/
 .hv_80 {
-    height: 80vh;
-    background-color: bisque;
+    height: 90vh;
 }
 
 .hv_70 {
@@ -86,28 +84,35 @@ Utility
     background-color: var(--off-white);
 }
 
-.text_light{
+.text_light {
     color: var(--off-white);
 }
 
-.text_dark{
+.text_dark {
     color: var(--not-quite-black);
 }
 
-.big_col{
+.big_col {
     width: 60%;
-    margin-right: 10%;
 }
 
-.sm_col{
+.sm_col {
     width: 30%;
 }
 
-.clearfix::after{
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
 
+}
+
+.float_lf {
+    float: left;
+}
+
+.float_rg {
+    float: right;
 }
 
 /********
@@ -176,7 +181,7 @@ Utility
 .text_banner {
     color: var(--off-white);
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 40%;
@@ -211,22 +216,35 @@ Utility
 /********
  Main
  *********/
-
-.grid_row{
-    margin-top: 50px;
-    margin: auto;
-    width: 1200px;
+.section_container {
     position: relative;
 }
 
-.grid_row img{
+.grid_layout {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.grid_row {
+    margin-top: 50px;
+    margin: auto;
+    width: 75vw;
+    position: relative;
+}
+
+.grid_row img {
     max-width: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
-.grid_img,
-.grid_text{
-    float: left;
-    
+.grid_text>h2 {
+    margin:2rem 0;
+}
+
+.grid_text>span {
+    line-height: 1.5rem;
 }
