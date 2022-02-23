@@ -1,28 +1,52 @@
+/* Colors
+
+--brand: #5865f2;
+--brand-gradient: linear-gradient(90deg,#8ea1e1,#7289da);
+--greyple: #99aab5;
+--dark-not-black: #2c2f33;
+--focus-border: #00b0f4;
+--status-green: #43b581;
+--text-link: #00b0f4;
+--off-white: #f6f6f6;
+--white: #fff;
+--not-quite-black: #23272a;
+
+ */
+
+
+
+
+
 /* General */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Montserrat', sans-serif; ;
+body {
+    font-family: 'Montserrat', sans-serif;
+    ;
+}
+
+a{
+    text-decoration: none;
 }
 
 /******** 
 Utility 
 ********/
-.hv_80{
+.hv_80 {
     height: 80vh;
     background-color: bisque;
 }
 
-.hv_70{
+.hv_70 {
     height: 70vh;
     background-color: red;
 }
 
-.hv_40{
+.hv_40 {
     height: 40vh;
     background-color: aquamarine;
 }
@@ -32,11 +56,36 @@ Utility
 /********
  Header 
  ********/
- 
- /******** 
+.navigation {
+    background-color: rgb(195, 195, 195);
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.navigation div,
+.navigation ul,
+.navigation ul>li {
+    display: inline-block;
+}
+
+.navigation ul>li {
+    margin: 0 2rem;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+}
+
+.access{
+    position: absolute;
+    right: 0;
+}
+
+/******** 
  Main 
  *********/
-
-
-
-
