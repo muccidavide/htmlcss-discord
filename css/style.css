@@ -60,11 +60,35 @@ h2 {
     font-weight: bold;
 }
 
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/******* 
+Common Rules 
+*********/
+.text_banner button,
+.new_adventure button {
+    margin: 2rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-block;
+    height: 60px;
+    padding: 0px 2.3rem;
+    border-radius: 23px;
+}
+
+
 /********
 Utility
 ********/
+.hv_100 {
+    height: 100vh;
+}
+
 .hv_80 {
-    height: 90vh;
+    height: 80vh;
 }
 
 .hv_70 {
@@ -73,7 +97,6 @@ Utility
 
 .hv_40 {
     height: 40vh;
-    background-color: aquamarine;
 }
 
 .bg_dark {
@@ -170,6 +193,7 @@ Utility
     height: 40px;
     padding: 0 1.3rem;
     border-radius: 23px;
+    line-height: 40px;
     vertical-align: middle;
 
 }
@@ -194,18 +218,6 @@ Utility
     line-height: 2rem;
     font-size: 1.3rem;
 }
-
-.text_banner button {
-    margin: 2rem 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    display: inline-block;
-    height: 60px;
-    padding: 0px 2.3rem;
-    border-radius: 23px;
-}
-
-
 
 #arrow_down {
     font-size: 2rem;
@@ -242,9 +254,62 @@ Utility
 }
 
 .grid_text>h2 {
-    margin:2rem 0;
+    margin: 2rem 0;
 }
 
 .grid_text>span {
     line-height: 1.5rem;
+}
+
+/*********
+ Technology 
+ *********/
+
+.technology {
+    width: 75vw;
+    margin: auto;
+}
+
+.tec_text {
+    text-align: center;
+    padding: 0 10rem;
+}
+
+.tec_text>h2 {
+    margin-bottom: 2rem;
+}
+
+.tec_img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.m_top {
+    margin-top: 5rem;
+}
+
+/*******
+  New Adventure 
+  ********/
+.new_adventure {
+    text-align: center;
+    width: 37%;
+    background-image: url("../img/stars.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-position-y: -26px;
+    padding: 1rem 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.new_adventure>button {
+    margin-top: 2rem;
+
 }
