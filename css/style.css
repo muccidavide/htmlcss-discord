@@ -5,18 +5,38 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif; ;
+}
+
+/******** 
+Utility 
+********/
+.hv_80{
+    height: 80vh;
+    background-color: bisque;
+}
+
+.hv_70{
+    height: 70vh;
+    background-color: red;
+}
+
+.hv_40{
+    height: 40vh;
+    background-color: aquamarine;
+}
+
+
+
 /********
  Header 
  ********/
-
- .site_header{
-     background-color: blue;
-     height: 70vh;
- }
-
  
  /******** 
  Main 
  *********/
 
- 
+
+
+
