@@ -1,23 +1,12 @@
-/* Colors
+/* Colors */
 
---brand: #5865f2;
---brand-gradient: linear-gradient(90deg,#8ea1e1,#7289da);
---greyple: #99aab5;
---dark-not-black: #2c2f33;
---focus-border: #00b0f4;
---status-green: #43b581;
---text-link: #00b0f4;
---off-white: #f6f6f6;
---white: #fff;
---not-quite-black: #23272a;
- */
 
 :root {
     --brand: #5865f2;
     --brand-gradient: linear-gradient(90deg, #8ea1e1, #7289da);
     --greyple: #99aab5;
     --dark-not-black: #2c2f33;
-    --focus-border: #00b0f4;
+    --focus-border: #8EA1E1;
     --status-green: #43b581;
     --text-link: #00b0f4;
     --off-white: #f6f6f6;
@@ -28,10 +17,7 @@
     --ekko-red: #de2761;
 }
 
-
-
 /* General */
-
 * {
     margin: 0;
     padding: 0;
@@ -50,11 +36,6 @@ a:visited {
     text-decoration: none;
 }
 
-button {
-    text-decoration: none;
-}
-
-
 h2 {
     font-size: 3rem;
     font-weight: bold;
@@ -66,7 +47,6 @@ h3 {
 }
 
 ul>li {
-    text-decoration: none;
     list-style-type: none;
 }
 
@@ -102,8 +82,8 @@ Utility
     background-color: var(--dark-not-black);
 }
 
-.hv_40 {
-    height: 40vh;
+.hv_30 {
+    height: 30vh;
 }
 
 .bg_dark {
@@ -112,6 +92,10 @@ Utility
 
 .btn_light {
     background-color: var(--off-white);
+}
+
+.btn_blue {
+    background-color: var(--focus-border);
 }
 
 .text_light {
@@ -179,6 +163,10 @@ Utility
     margin: 0 2rem;
 }
 
+.nav a{
+    color: var(--off-white);
+}
+
 .logo {
     position: absolute;
     left: 0;
@@ -205,6 +193,10 @@ Utility
 
 }
 
+.nav{
+
+}
+
 /********
  Banner Text
  ********/
@@ -226,7 +218,7 @@ Utility
     font-size: 1.3rem;
 }
 
-#arrow_down {
+.arrow_down {
     font-size: 2rem;
     font-weight: bold;
 }
@@ -328,7 +320,7 @@ Utility
 footer span,
 footer h3 {
     color: var(--white);
-    /* display: block; */
+    display: block;
 }
 .site_footer{
     position: relative;
