@@ -13,11 +13,8 @@
 
  */
 
-
-
-
-
 /* General */
+
 * {
     margin: 0;
     padding: 0;
@@ -26,13 +23,12 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    ;
 }
 
 a{
     text-decoration: none;
+    
 }
-
 /******** 
 Utility 
 ********/
@@ -43,7 +39,7 @@ Utility
 
 .hv_70 {
     height: 70vh;
-    background-color: red;
+    background-color: #5865f2;
 }
 
 .hv_40 {
@@ -57,12 +53,12 @@ Utility
  Header 
  ********/
 .navigation {
-    background-color: rgb(195, 195, 195);
+    color: white;
+    font-weight: bold;
     width: 1200px;
     margin: auto;
     text-align: center;
-    vertical-align: middle;
-    padding: 2rem 0;
+    padding: 2rem 0.8rem;
     position: relative;
 }
 
@@ -79,11 +75,26 @@ Utility
 .logo {
     position: absolute;
     left: 0;
+    bottom: 50%;
+    transform: translate(0, 50%);
 }
 
 .access{
     position: absolute;
     right: 0;
+    bottom: 50%;
+    transform: translate(0, 50%);
+}
+
+.access > button{
+    font-weight: bold;
+    display: inline-block;
+    background-color: white;
+    height: 40px;
+    padding: 0 1.3rem;
+    border-radius: 23px;
+    vertical-align: middle;
+    
 }
 
 /******** 
