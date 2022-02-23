@@ -53,15 +53,15 @@ ul>li {
 /******* 
 Common Rules 
 *********/
-.text_banner button,
-.new_adventure button {
-    margin: 2rem 1rem;
-    font-size: 1.2rem;
+.text_banner span,
+.new_adventure span {
     font-weight: bold;
     display: inline-block;
-    height: 60px;
-    padding: 0px 2.3rem;
+    height: 40px;
+    padding: 0 1.3rem;
     border-radius: 23px;
+    line-height: 40px;
+    vertical-align: middle;
 }
 
 
@@ -181,7 +181,7 @@ Utility
     transform: translate(0, 50%);
 }
 
-.access>button {
+.access>span {
     font-weight: bold;
     display: inline-block;
     background-color: var(--off-white);
@@ -190,10 +190,6 @@ Utility
     border-radius: 23px;
     line-height: 40px;
     vertical-align: middle;
-
-}
-
-.nav{
 
 }
 
